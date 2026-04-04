@@ -40,7 +40,20 @@ cd sathchalo
 flutter pub get
 ```
 
-### 2. Supabase Setup
+### 2. Environment Configuration
+
+This project uses `flutter_dotenv` to manage sensitive API keys. You MUST create a `.env` file in the root directory before running the app.
+
+1.  Create a file named `.env` in the root folder.
+2.  Add your credentials as follows:
+    ```env
+    SUPABASE_URL=https://your-project-url.supabase.co
+    SUPABASE_ANON_KEY=your-anon-key
+    GOOGLE_MAPS_API_KEY=your-google-maps-api-key
+    ```
+    *(Note: `.env` is listed in `.gitignore` and will not be committed to Git.)*
+
+### 3. Supabase Setup
 
 1. Go to [supabase.com](https://supabase.com) → your project
 2. **Database → Extensions** → Enable **PostGIS**
