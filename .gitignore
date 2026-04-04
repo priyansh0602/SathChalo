@@ -1,0 +1,50 @@
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+*.iml
+*.ipr
+*.iws
+
+# Android
+*.apk
+*.aab
+local.properties
+GeneratedPluginRegistrant.java
+.gradle/
+
+# iOS
+*.ipa
+Pods/
+.symlinks/
+Runner/GeneratedPluginRegistrant.h
+Runner/GeneratedPluginRegistrant.m
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment
+.env
+*.env.local
+
+# SathChalo local logs/artifacts
+analyze.txt
+analyze2.txt
+analyze_output.txt
+errors.txt
+build_output.txt
+run_clean.bat
+clean.dart
+check_db.dart
+*.log
+.gemini/
