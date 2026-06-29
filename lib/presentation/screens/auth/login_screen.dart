@@ -99,12 +99,15 @@ class _LoginScreenState extends ConsumerState<LoginScreen>
     
     setState(() => _isLoading = true);
     try {
+      final identity = _fetchedIdentity;
+      if (identity == null) return;
+
       await ref.read(authProvider.notifier).loginWithAadhaarDetails(
-        name: _fetchedIdentity!['name'],
-        phone: _fetchedIdentity!['phone'],
-        gender: _fetchedIdentity!['gender'],
-        dob: _fetchedIdentity!['dob'],
-        lastFour: _fetchedIdentity!['last_four'],
+        name: identity['name']?.toString() ?? '',
+        phone: identity['phone']?.toString() ?? '',
+        gender: identity['gender']?.toString() ?? '',
+        dob: identity['dob']?.toString() ?? '',
+        lastFour: identity['last_four']?.toString() ?? '',
       );
       
       if (!mounted) return;
