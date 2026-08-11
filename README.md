@@ -183,7 +183,3 @@ The SQL function `find_matching_rides()` handles all of this in a single databas
 - [ ] Add deep links for sharing rides
 
 ---
-
-## 📞 Support
-
-Built with ❤️ in India. For questions, open an issue.
